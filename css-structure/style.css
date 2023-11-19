@@ -1,0 +1,41 @@
+@import "common-style.css";
+/* Specifity Example (ctrl + /) */
+/* .para {
+    color: red;
+}
+
+p {
+    color: blue;
+} */
+
+
+header {
+    width: 100%;
+    height: 60px;
+    background: black;
+}
+
+header div {
+    width: calc(100% - 200px);
+    height: 60px;
+    background: hotpink;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    /* padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; */
+
+    padding: 20px 60px;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        background: green;
+    }
+}

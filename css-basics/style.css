@@ -1,0 +1,43 @@
+h1{
+    color: green;
+}
+
+li {
+    list-style-type: "\1F601";
+}
+
+.para {
+    color: green;
+}
+
+li.bold, 
+span.bold {
+    font-weight: bold;
+    color: orange;
+}
+
+p em {
+    color: blue;
+}
+
+h1 + p {
+    color: orange;
+}
+
+a:link{
+    color: violet;
+}
+
+a:visited {
+    color: goldenrod;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+
+body h1 + p span {
+    color: pink;
+    font-size: 20px;
+}
