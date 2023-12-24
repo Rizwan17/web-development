@@ -1,0 +1,39 @@
+/* li[class] {
+    border: 2px solid red;
+}
+
+li[class=a] {
+   color: red; 
+}
+
+li[class=b] {
+    color: blue;
+} */
+
+/* li[class~=a] {
+    color: hotpink;
+} */
+
+/* li[class|=a] {
+    color: hotpink;
+} */
+
+
+/* 
+^ start
+$ end
+*
+*/
+
+li[class^=a i]{
+    color: hotpink;
+}
+
+/* li[class$=f] {
+    border: 2px solid green;
+} */
+
+
+/* li[class*=bc]{
+    color: blue;
+} */
