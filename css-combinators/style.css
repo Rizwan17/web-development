@@ -1,0 +1,41 @@
+/* descendent selector */
+article p {
+    color: blue;
+}
+
+/* child combinator */
+
+article > p {
+    font-size: 30px;
+    font-weight: bold;
+    color: hotpink;
+}
+
+
+/* next sibling selector/combinator */
+
+h1 + p {
+    color: violet;
+}
+
+
+/* subsequent sibling combinator */
+
+h1 ~ p {
+    color: tomato;
+    font-weight: bold;
+}
+
+/* article p */
+article {
+    & p {
+        border: 1px solid tomato;
+    }
+}
+
+/* article + p */
+article {
+    + p {
+        background: yellow;
+    }
+}
