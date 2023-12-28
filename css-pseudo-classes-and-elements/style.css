@@ -1,0 +1,66 @@
+/* p:first-child {
+    color: red;
+    font-size: 20px;
+}
+
+p:last-child {
+    color: blueviolet;
+    font-size: 25px;
+}
+
+p:only-child{
+    color: hotpink;
+}
+
+.email-input {
+    outline: none;
+}
+.email-input:invalid{
+    color: red;
+    background: goldenrod;
+    border: 1px solid red;
+}
+
+.email-input:focus{
+    background: greenyellow;
+}
+
+ul li:hover {
+    color: red;
+    cursor: pointer;
+} */
+
+/* article p::first-line {
+    color: red;
+}
+
+article p::first-letter{
+    font-size: 40px;
+    color: blue;
+}
+
+article p::selection {
+    color: yellow;
+    background: hotpink;
+} */
+
+article p:first-child::first-line {
+    font-size: 30px;
+    color: violet;
+}
+
+p::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+}
+
+P::after {
+    content: " I am from India";
+}
+
+
+    
