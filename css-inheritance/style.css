@@ -1,0 +1,27 @@
+.parent {
+    font-size: 30px;
+    color: red;
+
+    border-top: 2px solid black;
+}
+
+.child {
+    border-top: inherit;
+    display: revert;
+
+
+
+}
+
+button {
+    all: unset;
+}
+
+
+/* 
+inherit
+initial
+revert
+unset
+
+*/
