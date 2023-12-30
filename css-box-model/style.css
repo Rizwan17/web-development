@@ -1,0 +1,40 @@
+h1{
+    background: red;
+}
+
+/* width (100) + padding (20 + 20) + border (20 + 20) = 180 
+ 
+with box sizgin
+100 - padding - border = 20
+
+*/
+.box {
+    width: 100px;
+    height: 60px;
+    background: gold;
+
+    border: 20px solid red;
+
+    display: inline-block;
+
+    padding: 20px;
+
+    /* padding: 20px; */
+    /* padding-top: 20px;
+    padding-left: 20px; */
+
+    /* margin: 40px; */
+
+}
+
+
+p span {
+    display: inline-block;
+    background: green;
+
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+
+
+}
