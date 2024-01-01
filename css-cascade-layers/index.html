@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cascade layers</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- 
+        Before cascade layers
+        ----------------------
+        browser identify relevant styles based on 
+        following criteria
+        1 - importance
+        2 - origin
+        3 - sorting rules
+
+        so the styles are ordered based on specificity,
+        importance and origin
+     -->
+
+    <header>
+      <h1>Cascade Layers</h1>
+      <a href="#" class="btn">Coding Insanely</a>
+    </header>
+
+    <main class="container">
+      <article>
+        <p>
+          <a href="">CSS</a> is one of the core fundamental technology in web
+          page design. You can learn Software Development from Youtube Channel
+          <a href="">Coding Insanely</a>.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Iure impedit alias voluptates quia <a href="#">similique</a> ea minus consequuntur illo dignissimos deleniti suscipit delectus, assumenda, sapiente, at nobis voluptatum a quis soluta.</p>
+
+        <p>
+            Subscribe to <a href="#" class="btn">Coding Insanely</a>
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
