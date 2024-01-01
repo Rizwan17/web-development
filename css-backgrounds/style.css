@@ -1,0 +1,114 @@
+/* background color property */
+header {
+    background-color: grey;
+    font-family: Arial;
+}
+
+header h2 {
+    background-color: black;
+    color: white;
+}
+
+header p {
+    background-color: orange;
+}
+
+header span {
+    background-color: white;
+}
+
+
+.bg-container {
+    margin: 20px 0;
+}
+.bg-baloon,
+.bg-star {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 1px solid black;
+
+}
+.bg-baloon {
+    background-image: url("balloons.jpg");
+}
+.bg-star {
+    background-image: url("star.png");
+    /* background-repeat: no-repeat, repeat-x, repeat-y, repeat */
+}
+
+
+
+.bg-img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-image: url(balloons.jpg);
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    /* background-size: length, percentage */
+    /* background-size: 100% 50%; */
+
+}
+.bg-cover {
+    /* image will large enough to fill whole the area while mainting aspect ratio */
+    background-size: cover;
+    
+}
+.bg-contain {
+    /* image will be right size to fit inside the box
+    if the aspect ratio of image and box different then
+    we may end up having space on either side of the box */
+    background-size: contain;
+
+}
+
+
+.bg-star-2{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-image: url(star.png);
+    background-repeat: no-repeat;
+
+    /* background-position: bottom 20px right 20px; */
+
+    /* background-position-x: 20px;
+    background-position-y: 40px; */
+
+    /* top-left-hand corner (0, 0) (x, y)*/
+    /* 
+        background-position: top, left, right, bottom; 
+        background-position: top 20px right 10px;
+
+        longhand property
+        background-position-x:  20px;
+        background-position-y: 20px;
+    */
+}
+
+.multiple-bg {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-image: url("star.png"), url("big-star.png");
+    background-repeat: repeat, repeat;
+    /* background-image: url(star.png), url(big-star.png);
+    background-repeat: repeat, no-repeat; */
+}
+
+.bg-gradient-linear,
+.bg-gradient-radial {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.bg-gradient-linear {
+    background-image: linear-gradient(30deg, orange, blue, black, red, gold);
+}
+
+.bg-gradient-radial {
+    background-image: radial-gradient(white, black, red, green);
+}
