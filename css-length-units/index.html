@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Length Units</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <h1>CSS Length Units</h1>
+    <p>There are two types of length used in css</p>
+    <ul>
+      <li>Absolute length units</li>
+      <li>Relative length units</li>
+    </ul>
+
+    <article>
+      <h2>Absolute length units</h2>
+      <p>
+        They are not relative to anything else, and are generally considered to
+        always be the same size.
+      </p>
+      <ol>
+        <li>cm -> Centimeters -> 1cm = 37.8px</li>
+        <li>mm -> Millimeters -> 1mm = 1/10th of cm</li>
+        <li>Q -> Quarter-millimeters -> 1Q = 1/40th of 1cm</li>
+        <li>in -> Inches -> 1in = 2.54cm = 96px</li>
+        <li>pc -> Picas -> 1pc = 1/6th of 1in</li>
+        <li>pt -> Points -> 1pt = 1/72nd of 1in</li>
+        <li>px -> Pixels -> 1px = 1/96th of 1in</li>
+      </ol>
+    </article>
+
+    <article>
+      <h2>Relative length units</h2>
+      <p>
+        Relative length units are relative to something else, for example font
+        size of parent, or size of viewport.
+      </p>
+      <ol>
+        <li>em -> font size of the parent.</li>
+        <li>rem -> font size of the root element.</li>
+        <li>vw -> 1% of the vieport's width</li>
+        <li>vh -> 1% of the viewport's height</li>
+        <li>vmin -> 1% of the vieport's smaller dimension</li>
+        <li>vmax -> 1% of the viewport's larger dimension</li>
+      </ol>
+    </article>
+
+    <div class="wrapper">
+      <div class="box px">I am 20px wide</div>
+      <div class="box vw">I am 20vw wide</div>
+      <div class="box em">I am 20em wide</div>
+    </div>
+
+    <!-- font size 16px -->
+    <h2>em unit</h2>
+    <ul class="ems">
+      <!-- font size 1.3 em = 1.3 * 16 = 20.8px-->
+      <li>One</li>
+      <li>Two</li>
+      <li>
+        Three
+
+        <ul>
+          <!-- font size 1.3 * 20.8 = 27. 04px -->
+          <li>Three A</li>
+          <li>
+            Three B
+            <ul>
+              <!-- font size 1.3 * 27.04 = 35.152px -->
+              <li>Three B 2</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>rem unit</h2>
+    <ul class="rems">
+      <!-- 2 rem = 16 * 2 = 32px-->
+      <li>One</li> 
+      <li>Two</li>
+      <li>
+        Three
+        <ul>
+          <!-- 2 rem = 16 * 2 = 32px -->
+          <li>Three A</li>
+          <li>
+            Three B
+            <ul>
+              <!-- 2rem = 16 * 2 = 32px -->
+              <li>Three B 2</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>percentage unit</h2>
+    <div class="box px-1">I am 200px wide</div>
+    <div class="box percent">I am 40% wide</div>
+    <div class="wrapper-2">
+      <div class="box px">I am 200px wide</div>
+      <div class="box percent">I am 40% wide</div>
+    </div>
+
+    <ul class="list">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+          <ul>
+            <li>Three A</li>
+            <li>Three B
+              <ul>
+                <li>Three B 2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    <h2>Unit less (Numbers)</h2>
+    <p>font weight, opacity</p>
+    <div class="img-wrapper">
+      <div class="content">Subscribe Coding Insanely</div>
+    </div>
+  </body>
+</html>

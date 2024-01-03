@@ -1,0 +1,103 @@
+.wrapper {
+    /* 16px */
+    font-size: 1em; 
+    /* font-size: 10px; */
+}
+.box {
+    background-color: yellowgreen;
+    border: 5px solid blue;
+    margin: 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.px {
+    width: 200px;
+}
+.vw {
+    width: 50vw;
+}
+.em {
+    /* 1em = 16px = 160px */
+    width: 10em;
+}
+/* .px {
+    width: 200px;
+}
+
+.vw {
+    width: 10vw;
+}
+.em {
+    width: 10em;
+} */
+
+/* .ems li {
+    font-size: 1.3em;
+}
+.rems li {
+    font-size: 2rem;
+} */
+
+.ems li {
+    font-size: 1.3em;
+}
+
+.rems li {
+    font-size: 2rem;
+}
+
+ .wrapper-2 {
+    width: 200px;
+    border: 5px solid orange;
+}
+
+
+.px-1{
+    width: 200px;
+}
+
+.percent {
+    width: 40%;
+}
+
+/* .wrapper-2 .px-1 {
+    width: 200px;
+}
+.wrapper-2 .percent {
+    width: 40%;
+} */
+
+.wrapper-2 .px-1 {
+    width: 200px;
+}
+
+.wrapper-2 .percent {
+    width: 40%;
+}
+
+.list li {
+    font-size: 80%;
+}
+
+.img-wrapper {
+    width: 300px;
+    height: 200px;
+    background-image: url(balloons.jpg);
+    background-size: cover;
+    position: relative
+}
+
+.img-wrapper .content {
+    width: 150px;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0.3;
+}
