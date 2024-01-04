@@ -1,0 +1,182 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* reset default style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* default style */
+body {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* utils classes */
+.b-100 { font-weight: 100; }
+.b-200 { font-weight: 200; }
+.b-300 { font-weight: 300; }
+.b-400 { font-weight: 400; }
+.b-500 { font-weight: 500; }
+.b-600 { font-weight: 600; }
+.b-700 { font-weight: 700; }
+.b-800 { font-weight: 800; }
+/* primary color, secondary colors */
+.p-color { color: #585e97; }
+.s-color { color: #c768d0; }
+.italic { font-style: italic; }
+
+/* styling background */
+.hero {
+    background: rgb(199,104,208);
+    background: linear-gradient(180deg, rgba(199,104,208,1) 0%, rgba(88,94,151,1) 100%);
+    height: 100vh;
+}
+
+.heading {
+    color: white;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 5%;
+}
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* styling profile card */
+.user-info {
+    width: 22rem;
+    height: 10rem;
+
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    /* how to center postioned element */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgb(242,241,242);
+    background: linear-gradient(180deg, rgba(242,241,242,1) 0%, rgba(199,203,216,1) 100%);
+    
+    box-shadow: 0px 0px 5px -5px white;
+}
+
+/* styling user profiel picture */
+.user-image {
+    width: 9rem;
+    height: 9rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    left: 0.5rem;
+    top: 0.5rem;
+
+    background-image: url("personal-picture/riz-pic.jpg");
+    background-size: cover;
+    box-shadow: 10px 0px 30px -10px #5b2860;
+
+   
+}
+
+.img-wrapper {
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    shape-outside: ellipse(43.66% 37.01% at 55.25% 51.38%);
+}
+
+.social-media-links {
+    padding-top: 9%;
+}
+
+.social-media-links span {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid #585e97;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    position: relative;
+    color: #585e97;
+}
+
+.social-media-links span i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* styling user details */
+.user-details {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10rem;
+    text-align: center;
+    box-sizing: border-box;
+    color: #585e97;
+    height: 100%;
+}
+.user-details h2 {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+}
+.city-info {
+    font-size: 0.5rem;
+}
+.fav-quote {
+    font-size: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.action-btns {
+    padding: 0.5rem 0;
+}
+.action-btns button {
+    outline: none;
+    border: 0;
+    color: white;
+    padding: 0.25rem 0.8rem;
+    border-radius: 0.8rem;
+    font-size: 0.6rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.action-btns button:first-child {
+    background: rgb(96,90,151);
+    background: linear-gradient(90deg, rgba(96,90,151,1) 0%, rgba(62,77,126,1) 100%);
+    box-shadow: 2px 0 2px 0px rgba(96,90,151,1);
+}
+
+.action-btns button:last-child {
+    background: rgb(117,228,191);
+    background: linear-gradient(90deg, rgba(117,228,191,1) 0%, rgba(85,207,165,1) 100%);
+    box-shadow: 2px 0 2px 0px rgba(117,228,191,1);
+}
+
+.info {
+    font-size: 0.4rem;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 0.3rem;
+}
+
+.info div {
+    margin: 0 0.2rem;
+}
