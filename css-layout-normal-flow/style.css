@@ -1,0 +1,52 @@
+h1 {
+    background: black;
+    color: white;
+}
+
+p {
+    background: #f8c360;
+    border: 1px solid orange;
+    padding: 10px;
+}
+
+p img {
+    float: left;
+}
+
+p {
+    width: 150px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+div {
+    clear: both;
+}
+
+.container {
+    width: 500px;
+    border: 1px solid black;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: red;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box:nth-of-type(1) {
+    left: -150px;
+}
+.box:nth-of-type(2) {
+    right: -150px;
+}
+.box:nth-of-type(3) {
+    left: -150px;
+}
+.box:nth-of-type(4) {
+    right: -150px;
+}
