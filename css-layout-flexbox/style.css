@@ -1,0 +1,67 @@
+html {
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+
+header {
+    background: black;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+article {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    background: orange;
+}
+/* flexing */
+/* flex, inline flex,  */
+/* flex direction, row, column, row-reverse, column-reverse */
+/* On overflowing of flex item: flex-wrap: wrap */
+/* changing flex direction to row-reverse */
+/* shorthand for flex-direction and flex-wrap = flex-flow */
+
+/* flexible sizing of flex items */
+/* flex: 1, flex: proportion px */
+/* flex is a shorthand property
+flex-grow, flex-shrink, flex-basis */
+
+/* Horizontal and vertical alignements */
+
+/* flex order */
+
+/*  */
+
+.flex-container {
+    display: flex;
+    border: 2px solid black;
+    margin: 10px;
+    height: 700px;
+
+    /* flex direction */
+    /* flex-direction: column-reverse; */
+
+    /* main axis */
+    /* justify-content: center; */
+
+    /* cross axis */
+    /* align-items: center; */
+
+    /* flex-wrap: wrap-reverse; */
+    /* align-content: space-evenly; */
+}
+
+/* article:first-child {
+    align-self: center;
+} */
