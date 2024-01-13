@@ -18,12 +18,22 @@ h1 {
 }
 
 article {
-    width: 200px;
+    /* width: 200px;
     height: 200px;
     overflow: hidden;
+    margin: 10px; */
     padding: 10px;
-    margin: 10px;
+    box-sizing: border-box;
     background: orange;
+}
+article:nth-of-type(1) {
+    background: orange;
+}
+/* article:nth-of-type(2) {
+    background: white;
+} */
+article:nth-of-type(2){
+    background: green;
 }
 /* flexing */
 /* flex, inline flex,  */
@@ -65,3 +75,27 @@ flex-grow, flex-shrink, flex-basis */
 /* article:first-child {
     align-self: center;
 } */
+
+article:nth-of-type(1) {
+    /* short hand property of grow, shrink and basis */
+    /* flex: 1 1 0; */
+
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+    flex: 1;
+    /* flex-grow: 1;
+    flex-shrink: 5;
+    flex-basis: 300px; */
+}
+
+article:nth-of-type(2) {
+    /* short hand property of grow, shrink and basis */
+    /* flex: 1 1 0; */
+
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+    flex: 2;
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px; */
+}
