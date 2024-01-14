@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Responsive Nav Header</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f80024fe91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <header class="main-header">
+        <nav class="nav-header">
+            <button id="menu-opener-btn" class="menu-opener-btn"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-1">
+                <li><a href="#">Find talent</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Learn design</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Go Pro</a></li>
+            </ul>
+            <a href="#" class="logo">Coding Insanely</a>
+            <div class="nav-2">
+                <form>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </form>
+
+                <a href="#" class="login">Log in</a>
+                <button class="btn reverse">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="sidebar-menu">
+        <div class="side-menu">
+            <button id="menu-close-btn" class="menu-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
+            <h2>Most Popular</h2>
+            <ul>
+                <li><a href="#">Find talents</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Learn design</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Go Pro</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <script>
+        const menuOpenerBtn = document.getElementById("menu-opener-btn");
+        const menuCloseBtn = document.getElementById("menu-close-btn");
+        const sidebarMenu = document.querySelector('.sidebar-menu');
+
+        menuOpenerBtn.addEventListener('click', (e) => {
+            sidebarMenu.classList.add('active');
+        });
+
+        menuCloseBtn.addEventListener('click', (e) => {
+            sidebarMenu.classList.remove('active');
+        });
+
+
+    </script>
+
+</body>
+</html>
