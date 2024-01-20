@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy Clone | HTML CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f80024fe91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="main-header">
+        <nav class="nav-header sm-font">
+            <button id="menu" class="side-menu-opener"><i class="fa-solid fa-bars"></i></button>
+            <button class="side-menu-opener hide"><i class="fa-solid fa-bars"></i></button>
+            <div class="logo">
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="">
+            </div>
+            <div class="nav-item nav-dropdown categories">
+                <span>Categories</span>
+                <div class="dropdown-content left">
+                    <ul class="dropdown-list">
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Finance & Accounting</a></li>
+                        <li><a href="#">IT & Software</a></li>
+                        <li><a href="#">Office Productivity</a></li>
+                        <li><a href="#">Personal Development</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Marketting</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Photography & Video</a></li>
+                        <li><a href="#">Health & Fitness </a></li>
+                        <li><a href="#">Music </a></li>
+                        <li><a href="#">Teaching & Academics </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item search-form-container">
+                <form>
+                    <input type="text" placeholder="Search Anything">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <ul class="nav-right">
+                <li class="nav-item nav-dropdown">
+                    <span>Udemy Business</span>
+                    <div class="dropdown-content right">
+                        <div class="dropdown-panel">
+                            <p class="p-font mb-2 text-center">Get your team access to over 25,000 top Udemy courses, anytime, anywhere.</p>
+                            <div>
+                                <a href="#" class="btn reverse">Try Udemy Business</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <span>Teach on Udemy</span>
+                    <div class="dropdown-content right">
+                        <div class="dropdown-panel">
+                            <p class="p-font mb-2 text-center">Turn what you know into an opportunity and reach millions around the world.</p>
+                            <div>
+                                <a href="#" class="btn reverse">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+                <li class="nav-item m-0">
+                    <a href="#" class="btn">Log in</a>
+                </li>
+                <li class="nav-item m-0">
+                    <a href="#" class="btn reverse">Sign up</a>
+                </li>
+                <li class="nav-item m-0">
+                    <a href="#" class="btn btn-icon"><i class="fa-solid fa-globe"></i></a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <aside class="side-menu">
+        <div class="side-menu-bar">
+            <button class="close-btn">X</button>
+            <div class="menu-container">
+                <ul class="p-font">
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+                <div class="divider"></div>
+                <h2 class="p-font b-700 s-color mt-1 mb-1 ml-2">Most Popular</h2>
+                
+                <ul class="p-font">
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Finance & Accounting</a></li>
+                    <li><a href="#">IT & Software</a></li>
+                    <li><a href="#">Office Productivity</a></li>
+                    <li><a href="#">Personal Development</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Marketting</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">Photography & Video</a></li>
+                    <li><a href="#">Health & Fitness </a></li>
+                    <li><a href="#">Music </a></li>
+                    <li><a href="#">Teaching & Academics </a></li>
+                </ul>
+
+                <h2 class="p-font b-700 s-color mt-1 mb-1 ml-2">More from Udemy</h2>
+                <ul class="p-font">
+                    <li><a href="#">Udemy Business</a></li>
+                    <li><a href="#">Get the app</a></li>
+                    <li><a href="#">Invite friends</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+
+                <div class="ml-2">
+                    <button class="btn plr-2">
+                        <i class="fa-solid fa-globe"></i>
+                        &nbsp;
+                        <span>English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <section class="hero">
+        <picture>
+            <source srcset="assets/hero-lg-img.jpg" media="(min-width: 700px)">
+            <img src="assets/hero-sm-img.jpg" alt="">
+        </picture>
+        <div class="hero-quote">
+            <h1 class="lg-h-font mb-1">The Skills you want at a price you'll love</h1>
+            <p class="p-font s-color">The #1 surging skill for 2024? GenAl. Skill up with courses from just Rs.389 during our New Year's Sale</p>
+        </div>
+    </section>
+
+    <section class="trusted-brands-wrapper">
+        <div class="trusted-brands">
+            <h2 class="h-font text-center s-color">Trusted by over 15,000 companies and millions of learners around the world</h2>
+            <div class="brands">
+                <div class="brand-img">
+                    <img src="assets/brands/volkswagen.svg" alt="volkswagen">
+                </div> 
+                <div class="brand-img">
+                    <img src="assets/brands/samsung.svg" alt="samsung">
+                </div>
+                <div class="brand-img">
+                    <img src="assets/brands/cisco.svg" alt="cisco">
+                </div>
+                <div class="brand-img">
+                    <img src="assets/brands/att.svg" alt="at&t">
+                </div>
+                <div class="brand-img">
+                    <img src="assets/brands/procter_gamble.svg" alt="procter_gamble">
+                </div>
+                <div class="brand-img">
+                    <img src="assets/brands/hewlett_packard_enterprise.svg" alt="hewlett_packard_enterprise">
+                </div>
+                <div class="brand-img">
+                    <img src="assets/brands/citi.svg" alt="citi">
+                </div>
+                <div class="brand-img">
+                    <img src="assets/brands/ericsson.svg" alt="ericsson">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-categories">
+        <h2 class="lg-h-font">A broad selection of courses</h2>
+        <p class="p-font mt-2">Chooose from over 210,000 online video courses with new additions published every month</p>
+
+        <div class="courses-wrapper mt-2">
+            <ul class="courses-tab">
+                <li><a href="#" class="p-font b-700">Python</a></li>
+                <li><a href="#" class="p-font b-700">Excel</a></li>
+                <li><a href="#" class="p-font b-700">Web Development</a></li>
+                <li><a href="#" class="p-font b-700">JavaScript</a></li>
+                <li><a href="#" class="p-font b-700">Data Science</a></li>
+                <li><a href="#" class="p-font b-700">Amazon AWS</a></li>
+                <li><a href="#" class="p-font b-700">Drawing</a></li>
+            </ul>
+
+            <div class="courses-content">
+                <h2 class="h-font b-700">Expand your career opportunities with Python</h2>
+                <p class="p-font">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal ..</p>
+                <div>
+                    <button class="btn plr-2">Explore Python</button>
+                </div>
+
+                <section class="udemy-courses mt-1 mb-1">
+                    <div class="course-wrapper">
+                        <div class="course-thumbnail">
+                            <img src="assets/thumbnails/html-css-project.jpg" alt="">
+                        </div>
+                        <h2 class="p-font b-700 mt-1 mb-1">Learn HTML CSS from Youtube Channel Coding Insanely</h2>
+                        <p class="s-color mb-1">Rizwan Khan</p>
+                        <p class="p-font b-500">$ 2.00</p>
+                    </div>
+                    <div class="course-wrapper">
+                        <div class="course-thumbnail">
+                            <img src="assets/thumbnails/css-box-model.jpg" alt="">
+                        </div>
+                        <h2 class="p-font b-700 mt-1 mb-1">Learn HTML CSS from Youtube Channel Coding Insanely</h2>
+                        <p class="s-color mb-1">Rizwan Khan</p>
+                        <p class="p-font b-500">$ 2.00</p>
+                    </div>
+                    <div class="course-wrapper">
+                        <div class="course-thumbnail">
+                            <img src="assets/thumbnails/profile-card.jpg" alt="">
+                        </div>
+                        <h2 class="p-font b-700 mt-1 mb-1">Learn HTML CSS from Youtube Channel Coding Insanely</h2>
+                        <p class="s-color mb-1">Rizwan Khan</p>
+                        <p class="p-font b-500">$ 2.00</p>
+                    </div>
+                    <div class="course-wrapper">
+                        <div class="course-thumbnail">
+                            <img src="assets/thumbnails/css-units.jpg" alt="">
+                        </div>
+                        <h2 class="p-font b-700 mt-1 mb-1">Learn HTML CSS from Youtube Channel Coding Insanely</h2>
+                        <p class="s-color mb-1">Rizwan Khan</p>
+                        <p class="p-font b-500">$ 2.00</p>
+                    </div>
+                    <div class="course-wrapper">
+                        <div class="course-thumbnail">
+                            <img src="assets/thumbnails/css-legacy-layout-method.jpg" alt="">
+                        </div>
+                        <h2 class="p-font b-700 mt-1 mb-1">Learn HTML CSS from Youtube Channel Coding Insanely</h2>
+                        <p class="s-color mb-1">Rizwan Khan</p>
+                        <p class="p-font b-500">$ 2.00</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-review-wrapper">
+        <div class="course-review">
+            <h2 class="h-font b-700 mb-2">How learners like you are achieving their goals</h2>
+            
+            <div class="course-review-container">
+
+                <div class="course-box">
+                    <div>
+                        <img height="20" src="assets/quote.svg" alt="">
+                        <p class="p-font mt-2 mb-2">I am proud to say that after a few months of taking this course... I passed my exam and am now an AWS Certified Cloud Practitioner! This content was exactly what the CCP exam covered.</p>
+                    </div>
+
+                    <div class="review-footer">
+                        <div class="author">
+                            <div class="user-icon">RK</div>
+                            <p class="p-font b-700 ml-1">Rizwan K</p>
+                        </div>
+
+                        <div class="divider mt-2 mb-2"></div>
+
+                        <div>
+                            <a href="#" class="course-link">
+                                <span class="play-icon">
+                                    <img src="" alt="">
+                                </span>
+                                <span class="course-title">[NEW] Ultimate AWS Certified Cloud Practitioner - 2022</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-box">
+                    <div>
+                        <img height="20" src="assets/quote.svg" alt="">
+                        <p class="p-font mt-2 mb-2">I am proud to say that after a few months of taking this course... I passed my exam and am now an AWS Certified Cloud Practitioner! This content was exactly what the CCP exam covered.</p>
+                    </div>
+
+                    <div class="review-footer">
+                        <div class="author">
+                            <div class="user-icon">RK</div>
+                            <p class="p-font b-700 ml-1">Rizwan K</p>
+                        </div>
+
+                        <div class="divider mt-2 mb-2"></div>
+
+                        <div>
+                            <a href="#" class="course-link">
+                                <span class="play-icon">
+                                    <img src="" alt="">
+                                </span>
+                                <span class="course-title">[NEW] Ultimate AWS Certified Cloud Practitioner - 2022</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-box">
+                    <div>
+                        <img height="20" src="assets/quote.svg" alt="">
+                        <p class="p-font mt-2 mb-2">This course helped me freshen up on my product manager skills and land a job at Facebook! Thanks guys :)</p>
+                    </div>
+
+                    <div class="review-footer">
+                        <div class="author">
+                            <div class="user-icon">RK</div>
+                            <p class="p-font b-700 ml-1">Rizwan K</p>
+                        </div>
+
+                        <div class="divider mt-2 mb-2"></div>
+
+                        <div>
+                            <a href="#" class="course-link">
+                                <span class="play-icon">
+                                    <img src="" alt="">
+                                </span>
+                                <span class="course-title">[NEW] Ultimate AWS Certified Cloud Practitioner - 2022</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+    </section>
+
+    <section class="top-categories">
+        <h2 class="h-font b-700 mt-2 mb-2">Top Categories</h2>
+
+        <div class="top-categories-container">
+
+            <div class="top-categories-container">
+                <div class="cat-img-wrapper">
+                    <div class="cat-img-container">
+                        <img src="assets/top-categories/lohp-category-design-v2.jpg" alt="design">
+                    </div>
+                    <h2 class="p-font b-500">Design</h2>
+                </div>
+    
+                <div class="cat-img-wrapper">
+                    <div class="cat-img-container">
+                        <img src="assets/top-categories/lohp-category-development-v2.jpg" alt="design">
+                    </div>
+                    <h2 class="p-font b-500">Development</h2>
+                </div>
+    
+                <div class="cat-img-wrapper">
+                    <div class="cat-img-container">
+                        <img src="assets/top-categories/lohp-category-marketing-v2.jpg" alt="design">
+                    </div>
+                    <h2 class="p-font b-500">Marketing</h2>
+                </div>
+    
+                <div class="cat-img-wrapper">
+                    <div class="cat-img-container">
+                        <img src="assets/top-categories/lohp-category-it-and-software-v2.jpg" alt="design">
+                    </div>
+                    <h2 class="p-font b-500">IT and Software</h2>
+                </div>
+    
+                <div class="cat-img-wrapper">
+                    <div class="cat-img-container">
+                        <img src="assets/top-categories/lohp-category-personal-development-v2.jpg" alt="design">
+                    </div>
+                    <h2 class="p-font b-500">Personal Development</h2>
+                </div>
+    
+                <div class="cat-img-wrapper">
+                    <div class="cat-img-container">
+                        <img src="assets/top-categories/lohp-category-business-v2.jpg" alt="design">
+                    </div>
+                    <h2 class="p-font b-500">Business</h2>
+                </div>
+    
+                <div class="cat-img-wrapper">
+                    <div class="cat-img-container">
+                        <img src="assets/top-categories/lohp-category-photography-v2.jpg" alt="design">
+                    </div>
+                    <h2 class="p-font b-500">Photography</h2>
+                </div>
+    
+                <div class="cat-img-wrapper">
+                    <div class="cat-img-container">
+                        <img src="assets/top-categories/lohp-category-music-v2.jpg" alt="design">
+                    </div>
+                    <h2 class="p-font b-500">Music</h2>
+                </div>
+    
+            </div>
+
+        </div>
+    </section>
+
+    <section class="udemy-business">
+        <div class="business-promo-content">
+            <div class="ub-logo">
+                <img src="assets/logo-ub.svg" alt="">
+            </div>
+            <h2 class="lg-h-font">Upskill your team with Udemy Business</h2>
+            <ul class="p-font mt-2">
+                <li>Unlimited access to 25,000+ top Udemy courses, anytime, anywhere</li>
+                <li>International course collection in 14 languages</li>
+                <li>Top certifications in tech and business</li>
+            </ul>
+
+            <div class="action-btns mt-2 mb-2">
+                <button class="btn reverse plr-2">Get Udemy Business</button>
+                <button class="btn mt-2 plr-2">Learn more</button>
+            </div>
+        </div>
+
+        <div class="ub-promo-img">
+            <img src="assets/UB_Promo_800x800.jpg" alt="">
+        </div>
+
+
+    </section>
+
+    <section class="udemy-instructor">
+        <div class="u-instructor-container">
+            <img src="assets/instructor-1x-v3.jpg" alt="">
+        </div>
+
+        <div class="instructor-content">
+            <h2 class="lg-h-font">Become an instructor</h2>
+            <p class="p-font mt-2 mb-2">Instructors from around the world teach millions of learners on Udemy. We provide the tools and skills to teach what you love.</p>
+            
+            <div class="action-btns">
+                <button class="btn reverse plr-2">Start Teaching Today</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookie settings</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Get the app</a></li>
+                <li><a href="#">Accessibility statement</a></li>
+            </ul>
+            <button class="btn reverse lang-btn plr-2 mb-2">
+                <i class="fa-solid fa-globe"></i>
+                <span>English</span>
+            </button>
+        </div>
+
+        <div class="footer-2 mt-2 mb-2">
+            <div class="footer-logo">
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
+            </div>
+            <p>&copy; 2024 Udemy, Inc.</p>
+        </div>
+    </footer>
+
+    
+
+
+    <script>
+        const menu = document.getElementById("menu");
+        const sideMenu = document.querySelector('.side-menu');
+        const closeMenu = document.querySelector('.close-btn');
+        menu.addEventListener('click', (e) => {
+            sideMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        })
+        closeMenu.addEventListener('click', (e) => {
+            sideMenu.classList.remove('active');
+            document.body.style.overflow = 'scroll';
+        })
+    </script>
+</body>
+</html>
