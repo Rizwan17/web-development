@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+section {
+    width: 80%;
+    height: 200vh;
+    border: 5px double black;
+    margin: 0 auto;
+
+
+}
+article {
+    padding: 1rem;
+    box-sizing: border-box;
+    color: white;
+}
+article:nth-of-type(1) {
+    background: magenta;
+}
+article:nth-of-type(2) {
+    background: darkviolet;
+}
+article:nth-of-type(3) {
+    background: salmon;
+}
+article:nth-of-type(4) {
+    background: darkgoldenrod;
+}
+article:nth-of-type(5) {
+    background: darkcyan;
+}
+
+/* modal css */
+.modal {
+    width: 30rem;
+    border: 1px solid black;
+    background: #eee;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .25);
+    padding: 1rem;
+    /* margin: 1rem; */
+    border-radius: 5px;
+    margin: 1rem;
+}
+.close {
+    background: transparent;
+    outline: none;
+    border: 1px solid black;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px black;
+    background: white;
+   
+}
+
+
+/* .modal {
+   position: fixed;
+}
+.close {
+    position: absolute;
+    right: -2rem;
+    top: -2rem;
+} */
